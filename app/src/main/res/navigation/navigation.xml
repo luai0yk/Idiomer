@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/idiomsFragment">
+
+    <fragment
+        android:id="@+id/idiomsFragment"
+        android:name="com.esh.eih.Fragments.IdiomsFragment"
+        android:label="fragment_idioms"
+        tools:layout="@layout/fragment_idioms" >
+        <action
+            android:id="@+id/action_idiomsFragment_to_viewIdiomFragment"
+            app:destination="@id/viewIdiomFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizzesFragment"
+        android:name="com.esh.eih.Fragments.QuizzesFragment"
+        android:label="fragment_quiz"
+        tools:layout="@layout/fragment_quizzes" >
+        <action
+            android:id="@+id/action_quizzesFragment_to_quizzesViewFragment"
+            app:destination="@id/quizzesViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.esh.eih.Fragments.FavoritesFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorites" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_viewIdiomFragment"
+            app:destination="@id/viewIdiomFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.esh.eih.Fragments.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/viewIdiomFragment"
+        android:name="com.esh.eih.Fragments.IdiomsViewFragment"
+        android:label="fragment_view_idiom"
+        tools:layout="@layout/fragment_idioms_view" >
+        <argument
+            android:name="idiom"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizzesViewFragment"
+        android:name="com.esh.eih.Fragments.QuizzesViewFragment"
+        android:label="fragment_quizzes_view"
+        tools:layout="@layout/fragment_quizzes_view" >
+        <argument
+            android:name="first_letter"
+            app:argType="string" />
+    </fragment>
+</navigation>

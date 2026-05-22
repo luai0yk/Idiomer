@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="25dp">
+
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green6"
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_speach"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Idiom" />
+
+    <ImageView
+        android:id="@+id/image_speach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/green_item_selector"
+        android:contentDescription="@string/favorite"
+        android:padding="4dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_speaker"
+        app:layout_constraintBottom_toTopOf="@+id/english_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/green6" />
+
+    <TextView
+        android:id="@+id/english_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/green1"
+        android:textIsSelectable="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_text"
+        tools:text="In dogs age" />
+
+
+    <TextView
+        android:id="@+id/arabic_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/grey6"
+        android:textColorHighlight="@color/green1"
+        android:textIsSelectable="true"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/english_text"
+        tools:text="منذ زمن طويل " />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">EIH</string>
+    <string name="idioms">Idioms</string>
+    <string name="quizzes">Quizzes</string>
+    <string name="favorite">Favorite</string>
+    <string name="favorites">Favorites</string>
+    <string name="settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="view_idiom">Idiom view</string>
+    <string name="click_here_to_search">Click here to search</string>
+    <string name="english_idioms_helper">English Idioms Helper</string>
+    <string name="idiom">Idiom</string>
+    <string name="definition">Definition</string>
+    <string name="example">Example</string>
+    <string name="empty_image">Empty Image</string>
+    <string name="no_matching_idioms">No matching idioms</string>
+    <string name="no_favorites">No favorites</string>
+    <string name="quiz_page">Quiz page</string>
+    <string name="this_is_a_test_how_this_text_will_show">This is a test how this text will show</string>
+    <string name="favorites_page">Favorites page</string>
+    <string name="shared_by_english_idioms_helper">Shared by English Idioms Helper</string>
+    <string name="share_using">Share using</string>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@drawable/green_item_selector"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/letter_text"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textColor="@color/green6"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="A" />
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_margin="6dp"
+        android:background="@color/grey5"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/idiom_text"
+        app:layout_constraintStart_toEndOf="@+id/letter_text"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/idiom_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:singleLine="true"
+        android:textColor="@color/green6"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/line"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="This is a test" />
+
+    <TextView
+        android:id="@+id/definition_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:singleLine="true"
+        android:textColor="@color/grey7"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/idiom_text"
+        app:layout_constraintTop_toBottomOf="@+id/idiom_text"
+        tools:text="This is a test of definition" />
+
+    <TextView
+        android:id="@+id/example_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:singleLine="true"
+        android:textColor="@color/grey7"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/idiom_text"
+        app:layout_constraintTop_toBottomOf="@+id/definition_text"
+        tools:text="This is a test of example" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

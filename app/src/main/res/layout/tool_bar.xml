@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/tool_bar"
+        android:layout_width="0dp"
+        android:layout_height="?actionBarSize"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/back_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/green6"
+            android:background="@drawable/green_item_selector"
+            android:contentDescription="@string/favorite"
+            android:scaleType="fitCenter"/>
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            tools:text="@string/quiz_page"
+            android:textColor="@color/grey8"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/image_share"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:visibility="visible"
+            android:visibility="gone"
+            android:padding="8dp"
+            android:src="@drawable/ic_share"
+            app:tint="@color/green6"
+            android:background="@drawable/green_item_selector"
+            android:contentDescription="@string/favorite"
+            android:scaleType="fitCenter"/>
+
+
+        <ImageView
+            android:id="@+id/image_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            tools:visibility="visible"
+            android:visibility="gone"
+            android:padding="8dp"
+            android:src="@drawable/ic_favorite_border"
+            app:tint="@color/green6"
+            android:background="@drawable/green_item_selector"
+            android:contentDescription="@string/favorite"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:id="@+id/diamonds_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            tools:visibility="visible"
+            android:visibility="gone"
+            android:background="@drawable/green_item_selector"
+            android:textSize="20sp"
+            android:maxLength="2"
+            android:textStyle="bold"
+            tools:text="300"
+            android:textColor="@color/green6"
+            android:gravity="center"
+            android:drawablePadding="8dp"
+            app:tooltipText="Add diamonds"
+
+            app:drawableRightCompat="@drawable/ic_diamond" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tool_bar"
+        android:orientation="horizontal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
